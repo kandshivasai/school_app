@@ -1,0 +1,19 @@
+<h1>Teachers</h1>
+
+<a href="/add-teacher/">Add Teacher</a>
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>subject</th><th>email
+
+        </th>
+    </tr>
+
+{% for t in teachers %}
+<tr>
+    <td>{{ t.name }} </td>
+    <td> {{ t.subject }}</td>
+    <td>{{t.email}}</td>
+</tr>
+</table>
+{% endfor %}
